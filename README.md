@@ -18,24 +18,42 @@ For this assignment, I need to:
 
 Sample Input
 The input comprises lines each of which specifies a command. There are 4 kinds of commands.
+
 (1) add a street, (2) change a street, (3) remove a street, and, (4) generate a graph. Here is an
 example of how my program should work.
+
 a "Weber Street" (2,-1) (2,2) (5,5) (5,6) (3,8)
+
 a "King Street S" (4,2) (4,8)
+
 a "Davenport Road" (1,4) (5,8)
+
 g
+
 V = {
+
 1: (2,2)
+
 2: (4,2)
+
 3: (4,4)
+
 4: (5,5)
+
 5: (1,4)
+
 6: (4,7)
+
 7: (5,6)
+
 8: (5,8)
+
 9: (3,8)
+
 10: (4,8)
+
 }
+
 E = {
 1<1,3>,
 <2,3>,
