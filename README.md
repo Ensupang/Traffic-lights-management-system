@@ -55,37 +55,69 @@ V = {
 }
 
 E = {
-1<1,3>,
+
+<1,3>,
+
 <2,3>,
+
 <3,4>,
+
 <3,6>,
+
 <7,6>,
+
 <6,5>,
+
 <9,6>,
+
 <6,8>,
+
 <6,10>
+
 }
+
 c "Weber Street" (2,1) (2,2)
+
 g
+
 V = {
+
 2: (4,2)
+
 5: (1,4)
+
 6: (4,7)
+
 8: (5,8)
+
 10: (4,8)
+
 }
+
 E = {
+
 <2,6>,
+
 <6,5>,
+
 <6,8>,
+
 <6,10>
+
 }
+
 r "King Street S"
+
 g
+
 V = {
+
 }
+
 E = {
+
 }
+
 Commands
 • a is used to add a street. It is specified as: \a "Street Name" (x1, y1) (x2, y2) . . . (xn, yn)".
 Each (xi, yi) is a GPS coordinate. The coordinates can be interpreted as a poly-line segment. That
