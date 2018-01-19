@@ -7,7 +7,9 @@ to install, and still be as effective as possible with their monitoring.
 Assignment 1:
 This is the first in a series of assignments that is part of a single large project.
 For this assignment, I need to:
+
 • Take as input a series of commands that describe streets.
+
 • Use that input to construct a particular kind of undirected graph.
 • Write the code in Python (Version 2.7.x).
 • Ensure that it works on linux system.
