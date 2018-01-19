@@ -1,4 +1,8 @@
-ECE650: The project is to help the local police department with their installation of security cameras at traffic intersections. In this assignment, I will solve a particular kind of optimization problem, called the Vertex Cover problem, in this context. The idea is for the police to be able to minimize the number of cameras they need to install, and still be as effective as possible with their monitoring.
+ECE650: The project is to help the local police department with their installation 
+of security cameras at traffic intersections. In this assignment, I will solve a particular 
+kind of optimization problem, called the Vertex Cover problem, in this context. 
+The idea is for the police to be able to minimize the number of cameras they need 
+to install, and still be as effective as possible with their monitoring.
 Assignment 1:
 This is the first in a series of assignments that is part of a single large project.
 For this assignment, I need to:
