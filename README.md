@@ -119,34 +119,50 @@ E = {
 }
 
 Commands
+
 • a is used to add a street. It is specified as: \a "Street Name" (x1, y1) (x2, y2) . . . (xn, yn)".
 Each (xi, yi) is a GPS coordinate. The coordinates can be interpreted as a poly-line segment. That
 is, it draw a line segment from (xi, yi) to (xi+1, yi+1). You are allowed to assume that each
 xi and yi is an integer. (Note, however, that the coordinates of an intersection may not be
 integers.)
+
 • c is used to change the specification of a street. Its format is the same as for a. It is a new
 specification for a street you’ve specified before.
+
 • r is used to remove a street. It is specified as \r "Street Name"".
+
 • g causes the program to output the corresponding graph.
+
 Input and Output
+
 The program take input from standard input, output to the standard
 output. Error should be output to standard error
+
 Errors
+
 The above example is that of a \perfect" user -- someone that did not make any mistakes with
 specifying the input. If a line in the input is erroneous,
 the code would immediately output an error message. The format of the message is to be the string
-\Error:" followed by a brief descriptive message about the error. For example:
+
+\Error:" followed by a brief descriptive message about the error. 
+
+For example:
+
 Error: ’c’ or ’r’ specified for a street that does not exist.
+
 The program would recover from the error as well. That is, the program should reject the
 errorneous line, but continue to accept input. The program would not crash because of an error.
 Any erroneous input we try will be of a relatively benign nature that mimics honest mistakes a user
 makes. We will not try malicious input, such as unduly long lines or weird control characters.
+
 The Output Graph
+
 There is a vertex corresponding to: (a) each intersection, and, (b) the end-point of a line segment of
 a street that intersects with another street. An example of (a) from above is Vertex 3. An example
 of (b) is Vertex 1. The identity of a vertex can be any string of letters or integers (but no special
 characters). For example, v1xyz is acceptable as the identity of a vertex, but not v1 !!#xyz. (The
 space is unacceptable, as are ’!’ and ’#’.
+
 There is an edge between two vertices if: (a) at least one of them is an intersection, (b) both
 lie on the same street, and, (c) one is reachable from the other without traversing another vertex.
 An example from above is the edge <1; 3>, which connects the end-point of a line segment to an
