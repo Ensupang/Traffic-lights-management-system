@@ -11,8 +11,11 @@ For this assignment, I need to:
 • Take as input a series of commands that describe streets.
 
 • Use that input to construct a particular kind of undirected graph.
+
 • Write the code in Python (Version 2.7.x).
+
 • Ensure that it works on linux system.
+
 Sample Input
 The input comprises lines each of which specifies a command. There are 4 kinds of commands.
 (1) add a street, (2) change a street, (3) remove a street, and, (4) generate a graph. Here is an
