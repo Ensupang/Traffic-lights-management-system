@@ -1,4 +1,5 @@
 Assignment 1:
+
 This is the first in a series of assignments that is part of a single large project.
 For this assignment, I need to:
 
