@@ -135,15 +135,14 @@ output. Error should be output to standard error
 
 Errors
 
-The above example is that of a \perfect" user -- someone that did not make any mistakes with
+The above example is that of a "perfect" user -- someone that did not make any mistakes with
 specifying the input. If a line in the input is erroneous,
 the code would immediately output an error message. The format of the message is to be the string
-
-\Error:" followed by a brief descriptive message about the error. 
+"Error:" followed by a brief descriptive message about the error. 
 
 For example:
 
-Error: ’c’ or ’r’ specified for a street that does not exist.
+Error: 'c' or 'r' specified for a street that does not exist.
 
 The program would recover from the error as well. That is, the program should reject the
 errorneous line, but continue to accept input. The program would not crash because of an error.
@@ -156,7 +155,7 @@ There is a vertex corresponding to: (a) each intersection, and, (b) the end-poin
 a street that intersects with another street. An example of (a) from above is Vertex 3. An example
 of (b) is Vertex 1. The identity of a vertex can be any string of letters or integers (but no special
 characters). For example, v1xyz is acceptable as the identity of a vertex, but not v1 !!#xyz. (The
-space is unacceptable, as are ’!’ and ’#’.
+space is unacceptable, as are '!' and '#'.
 
 There is an edge between two vertices if: (a) at least one of them is an intersection, (b) both
 lie on the same street, and, (c) one is reachable from the other without traversing another vertex.
