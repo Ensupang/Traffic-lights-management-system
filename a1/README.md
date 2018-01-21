@@ -115,7 +115,7 @@ E = {
 
 Commands
 
-• a is used to add a street. It is specified as: \a "Street Name" (x1, y1) (x2, y2) . . . (xn, yn)".
+• a is used to add a street. It is specified as: "a "Street Name" (x1, y1) (x2, y2) . . . (xn, yn)".
 Each (xi, yi) is a GPS coordinate. The coordinates can be interpreted as a poly-line segment. That
 is, it draw a line segment from (xi, yi) to (xi+1, yi+1). You are allowed to assume that each
 xi and yi is an integer. (Note, however, that the coordinates of an intersection may not be
@@ -124,7 +124,7 @@ integers.)
 • c is used to change the specification of a street. Its format is the same as for a. It is a new
 specification for a street you’ve specified before.
 
-• r is used to remove a street. It is specified as \r "Street Name"".
+• r is used to remove a street. It is specified as "r "Street Name"".
 
 • g causes the program to output the corresponding graph.
 
@@ -159,5 +159,5 @@ space is unacceptable, as are '!' and '#'.
 
 There is an edge between two vertices if: (a) at least one of them is an intersection, (b) both
 lie on the same street, and, (c) one is reachable from the other without traversing another vertex.
-An example from above is the edge <1; 3>, which connects the end-point of a line segment to an
-intersection. Another example is the edge <3; 6>, which connects two intersections.# Traffic-lights-management-system
+An example from above is the edge <1, 3>, which connects the end-point of a line segment to an
+intersection. Another example is the edge <3, 6>, which connects two intersections.
