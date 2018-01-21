@@ -1,6 +1,6 @@
 import sys
 import re
-def Sort(ans):
+def Sort(ans):#Dealing the data
     a=0
     b = []
     c = []
@@ -46,7 +46,7 @@ def Sort(ans):
                 else:
                     break
     return c
-def IsNum(n):
+def IsNum(n):#Check if it is number or not
     try:
         float(n)
         return True
