@@ -20,37 +20,39 @@ s 2 4
 
 2-0-4
 
-In the above, the first three lines make your executable, and run the driver program with some
-command-line arguments. Then, the lines \V = ...", \E = ...", and \2-0-4" are output. The
-input the user provided to your program via stdin is \s 2 4".
-1Input, Output, and Error
-Your program should take input from stdin, and output to stdout. Errors should be output to stderr.
-Errors should always start with \Error:" followed by a brief description. All your processes should
-terminate gracefully (and quietly) once you see EOF at stdin. Your program should not generate any
-extraneous output; for example, do not print out prompt strings such as \please enter input"
+In the above, the first three lines make it executable, and run the driver program with some
+command-line arguments. Then, the lines "V = ...", "E = ...", and "2-0-4" are output. The
+input the user provided to your program via stdin is "s 2 4".
+
+Input, Output, and Error
+
+The program would take input from stdin, and output to stdout. Errors would be output to stderr.
+Errors would always start with "Error:" followed by a brief description. All the processes would
+terminate gracefully (and quietly) once you see EOF at stdin. The program would not generate any
+extraneous output; for example, won't print out prompt strings such as "please enter input"
 and things like that.
+
 As the example above indicates, there are two kinds of inputs the user provides. One is via the
-command-line arguments, like -s and -n switches. This is done only once, when your program is
-started. The other input is the ’s’ command on stdin, which may be issued repeatedly, just as in
-Assignment 2. For the ’s’ command, your program should output a shortest path.
-We will not test your program for format errors in the input. That is, the command-line
-arguments, whenever specified, will be formatted correctly, and the s input will also be formatted
-correctly. Of course, we may omit command-line arguments (see below for what to do in such cases),
-and specify vertex IDs to s that do not exist, or between whom a path does not exist. The latter
-two cases should cause your program to report an error.
+command-line arguments, like -s and -n switches. This is done only once, when the program is
+started. The other input is the 's' command on stdin, which may be issued repeatedly, just as in
+Assignment 2. For the 's' command, the program would output a shortest path.
 
 CMake
-As discussed below under \Submission Instructions", you should use a CMakeLists.txt file to build
-your project. We will build your project using the following sequence:
+
+You should use a CMakeLists.txt file to build
+your project. You will build the project using the following sequence:
+
 cd PROJECT && mkdir build && cd build && cmake ../ && make install
-where PROJECT is the top level directory of your submission. If your code is not compiled from
-scratch (i.e., from the C++ sources), you get an automatic 0.
+
+where PROJECT is the top level directory of the submission. 
+
 Note that we are using make install instead of make. The install target instructs make to
 copy all of the binaries (both Python and C++) into directory ./run/bin. This ensures that all
 the executable files (including the Python program) are in the same directory.
 
 File names
-There are two file names that are important. One is your main executable. This must be named
+
+There are two file names that are important. One is the main executable. This must be named
 ece650-a3. Our marking script will simply try and run this after building your project. The other
 executable file whose name is important is your random input generator. The executable for this
 must be named rgen. The reason is that for some of our tests, we will replace your rgen with ours.
