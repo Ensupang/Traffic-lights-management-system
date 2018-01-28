@@ -1,11 +1,15 @@
 Assignment 4:
 
 SAT Solver
-We will be using MiniSat SAT solver available at https://github.com/agurfinkel/minisat
+
+This assignment would use MiniSat SAT solver available at https://github.com/agurfinkel/minisat
 MiniSat provides a CMake build system. You can compile it using the usual sequence:
+
 cd PROJECT && mkdir build && cd build && cmake ../ && make
+
 The build process creates an executable minisat and a library libminisat.a. You will need link
 against the library in your assignment.
+
 Play around with it. Sample files are available in the ece650-minisat repository on GitHub.
 Incorporate SAT
 Create a polynomial reduction of the decision version of VERTEX COVER to CNF-SAT. We have
@@ -19,29 +23,29 @@ vertices in increasing order separated by one space each. You can use qsort(3) o
 sorting.
 Assuming that your executable is called ece650-a4, the following is a sample run of your
 program:
+
 $ ./ece650-a4
+
 V 5
+
 E {<0,4>,<4,1>,<0,3>,<3,4>,<3,2>,<1,3>}
+
 3 4
+
 The lines starting with V and E are the inputs to your program, and the last line is the output.
 Note that the minimum-sized vertex cover is not necessarily unique. You need to output just one
 of them.
-1Marking
-We will try different graph inputs and check what vertex cover you output. We will only test your
-program with syntactically and semantically correct inputs.
-• Marking script for compile/make etc. fails: automatic 0
-• Your program runs, awaits input and does not crash on input: + 20
-• Passes Test Case 1: + 25
-• Passes Test Case 2: + 25
-• Passes Test Case 3: + 25
-• Programming style: + 5
+
 CMake
-As discussed below under \Submission Instructions", you should use a CMakeLists.txt file to build
+As discussed below under "Submission Instructions", you should use a CMakeLists.txt file to build
 your project. We will build your project using the following sequence:
+
 cd PROJECT && mkdir build && cd build && cmake ../
+
 where PROJECT is the top level directory of your submission. If your code is not compiled from
 scratch (i.e., from the C++ sources), you get an automatic 0.
 Submission Instructions
+
 You should place all your files at the top of a GitHub repository. The repository should contain:
 • All your C++ source-code files.
 • A CMakeLists.txt, that builds your C++ executable ece650-a4.
