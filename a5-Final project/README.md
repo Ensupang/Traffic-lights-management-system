@@ -1,11 +1,14 @@
 Final Project:
 
 You should augment your code from Assignment 4 in the following ways.
+
 • Make it multithreaded. You should have at least 4 threads: one for I/O, and one each for the
 different approaches to solve the minimum vertex cover problem.
+
 • Implement the following two additional ways to solve MIN-VERTEX-COVER, in addition
 to the REDUCTION-TO-CNF-SAT approach you had in Assignment 4. (We will call your
 approach from Assignment 4, CNF-SAT-VC.)
+
 1. Pick a vertex of highest degree (most incident edges). Add it to your vertex cover and
 throw away all edges incident on that vertex. Repeat till no edges remain. We will call
 this algorithm APPROX-VC-1.
