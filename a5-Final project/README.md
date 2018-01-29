@@ -43,9 +43,11 @@ You should analyze how efficient each approach is, for various inputs. An input 
 by the number of vertices. \Efficient" is characterized in one of two ways: (1) running time, and
 (2) approximation ratio. We characterize the approximation ratio as the ratio of the size of the
 computed vertex cover to the size of an optimal (minimum-sized) vertex cover.
+
 For measuring the running time, use pthread getcpuclockid(). For an example of how it is
 used, see http://www.kernel.org/doc/man-pages/online/pages/man3/pthread_getcpuclockid.
 3.html.
+
 For measuring the approximation ratio, compare it to the output of CNF-SAT-VC, which is
 guaranteed to be optimal.
 Your objective is to measure, for various values of jV j (number of vertices), for the graphs
@@ -74,16 +76,7 @@ why your plots look the way they do. For example, if there is a \spike" in the a
 for some value of jV j for one of the approaches, you should explain why there is such a spike. You
 should also explain apparent trends. For example, if, for one of the approaches, the running time
 seems to increase linearly with jV j, you should reason about why that is happening.
-Marking
-We will mark by: (1) Trying some inputs and checking your output, (2) inspecting your code to
-make sure that you are using pthreads correctly, and, (3) reading your report.
-2Figure 1: Example plot, generated using gnuplot. The error bars for Approx-2 are not visible
-because the standard deviation is small.
-• Marking script for compile/make etc. fails: automatic 0
-• Your program runs, awaits input and does not crash on input: + 20
-• Correctly implemented 2 new algorithms: + 20 each, total + 40
-• Generated plots: + 20
-• Report: + 20
+
 CMake
 As discussed below under \Submission Instructions", you should use a CMakeLists.txt file to build
 your project. We will build your project using the following sequence:
