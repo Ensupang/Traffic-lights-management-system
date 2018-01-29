@@ -66,6 +66,7 @@ such graph. Then, you should compute the mean (average) and standard deviation a
 100 runs for each value of jV j. For the approximation ratio, if there is any random component (e.g.,
 which edges you choose, for APPROX-VC-2), then you should measure that multiple times as well
 for each graph.
+
 Report
 The main part of your report are graphs (plots) corresponding to the data you generate as described
 in the \Analysis" section above. One way to show the output is to have two plots: one for running
