@@ -26,8 +26,11 @@ in sorted order. That is, give the following input:
 V 5
 
 E {<2,1>,<2,0>,<2,3>,<1,4>,<4,3>}
+
 The output from your program should be:
+
 1CNF-SAT-VC: 2,4
+
 APPROX-VC-1: 2,4
 APPROX-VC-2: 0,2,3,4
 That is, the name of the algorithm, followed by a colon ’:’, a single space, and then the computed
