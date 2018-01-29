@@ -12,6 +12,7 @@ approach from Assignment 4, CNF-SAT-VC.)
 1. Pick a vertex of highest degree (most incident edges). Add it to your vertex cover and
 throw away all edges incident on that vertex. Repeat till no edges remain. We will call
 this algorithm APPROX-VC-1.
+
 2. Pick an edge hu; vi, and add both u and v to your vertex cover. Throw away all edges
 attached to u and v. Repeat till no edges remain. We will call this algorithm APPROXVC-2.
 Inputs
