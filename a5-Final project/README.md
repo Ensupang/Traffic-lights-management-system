@@ -22,7 +22,9 @@ not necessarily the same edges.
 Output
 Given a graph as input, your program should output the vertex cover computed by each approach
 in sorted order. That is, give the following input:
+
 V 5
+
 E {<2,1>,<2,0>,<2,3>,<1,4>,<4,3>}
 The output from your program should be:
 1CNF-SAT-VC: 2,4
