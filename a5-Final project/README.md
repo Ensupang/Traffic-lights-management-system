@@ -61,6 +61,7 @@ graphs for jV j 2 [3; 18] using that program, in increments of 3. That is, graph
 vertices. If you find that you cannot solve graphs with 18 vertices, reduce the number of vertices
 to the largest that you can solve, e.g., 16. Overall, your graph must have at least 6 different vertex
 sizes. You can reduce the size of the step if necessary.
+
 You should generate at least 10 graphs for each value for jV j, compute the time and approximation ratio for each such graph. You should measure the running time for at least 10 runs of each
 such graph. Then, you should compute the mean (average) and standard deviation across those
 100 runs for each value of jV j. For the approximation ratio, if there is any random component (e.g.,
