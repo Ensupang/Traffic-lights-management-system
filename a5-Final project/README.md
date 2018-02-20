@@ -83,7 +83,9 @@ seems to increase linearly with jV j, you should reason about why that is happen
 CMake
 As discussed below under \Submission Instructions", you should use a CMakeLists.txt file to build
 your project. We will build your project using the following sequence:
+
 cd PROJECT && mkdir build && cd build && cmake ../
+
 where PROJECT is the top level directory of your submission. If your code is not compiled from
 scratch (i.e., from the C++ sources), you get an automatic 0. Unlike for the assignments, you must
 create the CMakeLists.txt file on your own. You can use a CMakeLists.txt file from previous
