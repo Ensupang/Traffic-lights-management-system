@@ -1,5 +1,4 @@
-Assignment 1:
-
+Part_1
 This is the first in a series of assignments that is part of a single large project.
 
 • Take as input a series of commands that describe streets.
