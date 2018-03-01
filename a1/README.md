@@ -1,5 +1,9 @@
 Part_1
 
+Run in Bash:
+
+$python a1ece650.py
+
 • Take as input a series of commands that describe streets.
 
 • Use that input to construct a particular kind of undirected graph.
