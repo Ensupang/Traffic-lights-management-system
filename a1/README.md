@@ -25,6 +25,8 @@ a "Davenport Road" (1,4) (5,8)
 
 g
 
+(Outcome:
+
 V = {
 
 1: (2,2)
@@ -69,11 +71,13 @@ E = {
 
 <6,10>
 
-}
+})
 
 c "Weber Street" (2,1) (2,2)
 
 g
+
+(Outcome:
 
 V = {
 
@@ -99,11 +103,13 @@ E = {
 
 <6,10>
 
-}
+})
 
 r "King Street S"
 
 g
+
+(Outcome:
 
 V = {
 
@@ -111,9 +117,8 @@ V = {
 
 E = {
 
-}
+})
 
-Commands
 
 • a is used to add a street. It is specified as: "a "Street Name" (x1, y1) (x2, y2) . . . (xn, yn)".
 Each (xi, yi) is a GPS coordinate. The coordinates can be interpreted as a poly-line segment. That
@@ -131,7 +136,7 @@ specification for a street you’ve specified before.
 Input and Output
 
 The program take input from standard input, output to the standard
-output. Error should be output to standard error
+output. Error should be output to standard error.
 
 Errors
 
@@ -144,10 +149,8 @@ For example:
 
 Error: 'c' or 'r' specified for a street that does not exist.
 
-The program would recover from the error as well. That is, the program should reject the
+The program would recover from the error as well. That is, the program would reject the
 errorneous line, but continue to accept input. The program would not crash because of an error.
-Any erroneous input we try will be of a relatively benign nature that mimics honest mistakes a user
-makes. We will not try malicious input, such as unduly long lines or weird control characters.
 
 The Output Graph
 
@@ -157,7 +160,7 @@ of (b) is Vertex 1. The identity of a vertex can be any string of letters or int
 characters). For example, v1xyz is acceptable as the identity of a vertex, but not v1 !!#xyz. (The
 space is unacceptable, as are '!' and '#'.
 
-There is an edge between two vertices if: (a) at least one of them is an intersection, (b) both
+*There is an edge between two vertices if: (a) at least one of them is an intersection, (b) both
 lie on the same street, and, (c) one is reachable from the other without traversing another vertex.
 An example from above is the edge <1, 3>, which connects the end-point of a line segment to an
 intersection. Another example is the edge <3, 6>, which connects two intersections.
