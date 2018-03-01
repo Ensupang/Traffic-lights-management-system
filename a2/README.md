@@ -1,6 +1,6 @@
-Part_2
+Part_2 (Using Dijkstra Algorithm to find the shortest path)
 
-Sample Run
+Sample Run:
 
 $mkdir build
 
@@ -38,16 +38,12 @@ s 4 0
 
 Input, Output, and Error
 
-The program would take input from standard input, and output to standard output. Errors
-can also be output to standard output, but would always start with "Error:" followed by a brief
-description. The program would terminate gracefully (and quietly) once it sees EOF. The program
-would not generate any extraneous output; for example, it won't print out prompt strings such as
-"please enter input" and things like that.
+The program would take input from standard input, and output to standard output. Errors always start with "Error:" followed by a brief description. The program would terminate gracefully (and quietly) once it sees EOF.
 
 As the example above indicates, one kind of input is the specification of a set of vertices V, and
 set of edges E of the undirected graph. The specification of a set of vertices starts with 'V', followed
 by a space, followed by a positive integer, all in one single line. If the integer that follows the V is
-i, then we assume that the vertices are identified by 0; : : : ; i − 1.
+i, then we assume that the vertices are identified by 0, 1, 2,..., i − 1.
 
 The specification for a set of edges starts with 'E'. It then has a space, followed by the set of
 edges in a single line delimited by '{' and '}'. The two vertices of an edge are delimited by '<' and
@@ -57,8 +53,7 @@ whitespace characters within the { }.
 The only other kind of input starts with an 's'. It asks for a shortest path from the first vertex
 to the second that is specified after the s. The s is followed by a space, a vertex ID, another space,
 and a second vertex ID. The lines 2-8-10 and 4-1-2-0 above are outputs of the s commands that
-immediately precede them. The output comprises vertex IDs separated by -, with no whitespace
-within. If a path does not exist between the vertices, it would output an error.
+immediately precede them. If a path does not exist between the vertices, it would output an error.
 
 The graph is specified by the specification of the set of vertices V followed by the set of edges E,
 in that order. V and E always occur together. There is no relationship between subsequent graph
