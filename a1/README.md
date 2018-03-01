@@ -1,6 +1,6 @@
 Part_1
 
-Run in Bash:
+Run in bash:
 
 $python a1ece650.py
 
