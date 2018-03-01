@@ -10,8 +10,6 @@ $python a1ece650.py
 
 • Write the code in Python (Version 2.7.x).
 
-• Ensure that it works on linux system.
-
 Sample Input
 The input comprises lines each of which specifies a command. There are 4 kinds of commands.
 
