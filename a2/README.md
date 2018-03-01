@@ -1,10 +1,18 @@
-Assignment 2:
+Part_2
 
 Sample Run
 
-Assume that the executable is called a2-ece650. In the following, \$" is the command-prompt.
+$mkdir build
+
+$cd build
+
+$cmake ..
+
+$make
 
 $ ./a2-ece650
+
+Input sample_1:
 
 V 15
 
@@ -12,7 +20,11 @@ E {<2,6>,<2,8>,<2,5>,<6,5>,<5,8>,<6,10>,<10,8>}
 
 s 2 10
 
-2-8-10
+(Outcome:
+
+2-8-10)
+
+Input sample_2:
 
 V 5
 
@@ -20,7 +32,9 @@ E {<0,2>,<2,1>,<2,3>,<3,4>,<4,1>}
 
 s 4 0
 
-4-1-2-0
+(Outcome:
+
+4-1-2-0)
 
 Input, Output, and Error
 
@@ -52,10 +66,3 @@ specifications; when a new V specification starts, all previous information can 
 the specification of the graph there can be zero or more shortest-path queries s. For each s query,
 only one shortest path should be output; multiple shortest paths might exist and an arbitrary choice
 can be made.
-
-CMake
-
-As discussed below under "Submission Instructions", a CMakeLists.txt file was created to
-build the project. You can build the project using the following sequence:
-
-cd PROJECT && mkdir build && cd build && cmake ../ && make
