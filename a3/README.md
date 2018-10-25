@@ -39,14 +39,13 @@ Assignment 2. For the 's' command, the program would output a shortest path.
 
 CMake
 
-You should use a CMakeLists.txt file to build
-your project. You will build the project using the following sequence:
+Build the project using the following sequence:
 
 cd PROJECT && mkdir build && cd build && cmake ../ && make install
 
 where PROJECT is the top level directory of the submission. 
 
-Note that we are using make install instead of make. The install target instructs make to
+The install target instructs make to
 copy all of the binaries (both Python and C++) into directory ./run/bin. This ensures that all
 the executable files (including the Python program) are in the same directory.
 
